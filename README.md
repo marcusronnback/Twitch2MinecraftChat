@@ -24,7 +24,7 @@ chat:
 twitch:
   channel: ''
   username: ''
-  oauth_pwd:''
+  oauth_pwd: ''
 ```
 
 ### Build
