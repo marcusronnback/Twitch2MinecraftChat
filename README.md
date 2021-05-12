@@ -1,7 +1,7 @@
 This is a fork of https://github.com/axel012/ircbot, thank you Axel012.
 # Twitch2MinecraftChat
 Twitch2MinecraftChat is a twitch chat bot plugin for Minecraft Bukkit/Spigot servers. Based on the ircbot by axel012.
-  - Displays Twitch chat on minecraft
+  - Displays twitch chat ingame using the Minecraft Chat.
 
 # Minecraft Commands
   - /start or /ircbot:start - Starts Twitch Bot
