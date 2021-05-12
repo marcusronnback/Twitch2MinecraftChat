@@ -1,7 +1,7 @@
-package com.github.axel012.ircbot.commands;
+package com.github.marcusronnback.ircbot.commands;
 
-import com.github.axel012.ircbot.BotManager;
-import com.github.axel012.ircbot.ChatUtils;
+import com.github.marcusronnback.ircbot.BotManager;
+import com.github.marcusronnback.ircbot.ChatUtils;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
