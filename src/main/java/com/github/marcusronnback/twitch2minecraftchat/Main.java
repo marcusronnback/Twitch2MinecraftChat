@@ -13,7 +13,7 @@ public final class Main extends JavaPlugin {
         _config.options().copyDefaults(true);
         saveConfig();
         try {
-            System.out.println("Loading plugin IRC BOT...");
+            System.out.println("Loading plugin Twitch2MinecraftChat...");
             System.out.println("Generating items list ...");
             System.out.println("Verifing config set");
             verifyConfigSet();

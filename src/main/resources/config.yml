@@ -21,6 +21,7 @@
 chat:
   enable: true
   timeout: 15000
+  prefix: '[Twitch]'
 twitch:
   channel: ''
   username: ''

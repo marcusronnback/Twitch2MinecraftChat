@@ -15,6 +15,7 @@ public class BotManager extends PircBot {
     private static BotManager _instance = null;
     private  HashMap<String,Long> _chatTimeout;
     private int CHAT_TIMEOUT;
+    private String PREFIX;
     private boolean _chatEnabled = false;
     FileConfiguration _config = null;
 
@@ -34,6 +35,7 @@ public class BotManager extends PircBot {
         try {
             _chatEnabled = _config.getBoolean("chat.enable");
             CHAT_TIMEOUT = _config.getInt("chat.timeout");
+            PREFIX = _config.getString("chat.prefix");
             this.setName(_config.getString("twitch.username"));
         } catch (Exception e){
             e.printStackTrace();
@@ -102,7 +104,7 @@ public class BotManager extends PircBot {
                 !sender.toLowerCase().contains("bot")){
             if(!canSendChatMessage(sender))
                 return;
-            ChatUtils.twitchChatToMinecraft(sender,message);
+            ChatUtils.twitchChatToMinecraft(sender,message,PREFIX);
             _chatTimeout.put(sender,System.currentTimeMillis());
         }
     }
