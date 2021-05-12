@@ -17,7 +17,7 @@ Follow the instructions below to configure your Config file.
 chat:
   enable: true
   timeout: 250
-  
+  prefix: '[Twitch]'
 # channel: channel to connect to
 # username: twitch credentials username
 # oauth_pwd: oauth string generated from https://twitchapps.com/tmi/,
