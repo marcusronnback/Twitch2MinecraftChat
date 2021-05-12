@@ -61,7 +61,7 @@ public class BotManager extends PircBot {
             this.connect(
                     "irc.twitch.tv",
                     6667,
-                     pwd
+                    pwd
             );
             this.joinChannel("#"+_config.getString("twitch.channel"));
     }
@@ -71,7 +71,7 @@ public class BotManager extends PircBot {
                 return false;
             }else{
                 _connect();
-            return true;
+                return true;
             }
     }
 
@@ -83,9 +83,9 @@ public class BotManager extends PircBot {
         if(this.isConnected()) {
             this.disconnect();
             this.clearTimeouts();
-          return true;
+            return true;
         }else{
-         return  false;
+            return  false;
         }
     }
 

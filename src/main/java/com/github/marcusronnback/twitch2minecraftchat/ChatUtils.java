@@ -29,7 +29,7 @@ public class ChatUtils {
     public  static  void twitchChatToMinecraft(String user,String message){
         //dispatch async event
         Bukkit.getServer().getScheduler()
-            .scheduleSyncDelayedTask(IrcMain.getPlugin(IrcMain.class), new Runnable() {
+            .scheduleSyncDelayedTask(Main.getPlugin(Main.class), new Runnable() {
             public void run() {
                 int colorIndex = _random.nextInt(_colors.length);
                 String color = _colors[colorIndex];

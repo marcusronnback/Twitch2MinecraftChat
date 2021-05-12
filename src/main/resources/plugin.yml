@@ -1,18 +1,18 @@
-name: Ircbot
+name: Twitch2MinecraftChat
 version: @version@
-main: com.github.marcusronnback.ircbot.IrcMain
+main: com.github.marcusronnback.twitch2minecraftchat.Main
 api-version: 1.16
 commands:
   start:
-    usage: /ircbot:start
-    description: Start the irc twitch bot
-    aliases: [irsta]
+    usage: /tmc:start
+    description: Start the twitch chat bot
+    aliases: [tmcson]
   stop:
-    usage: /ircbot:stop
-    description: Stop the irc twitch bot
-    aliases: [irsto]
+    usage: /tmc:stop
+    description: Stop the twitch chat bot
+    aliases: [tmcsoff]
   togglechat:
-    usage: /ircbot:togglechat
+    usage: /tmc:togglechat
     description: Enable/Disable Twitch chat
-    aliases: [tgc]
+    aliases: [tmctoggle]
 

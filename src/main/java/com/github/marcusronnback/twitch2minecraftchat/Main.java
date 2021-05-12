@@ -1,11 +1,11 @@
 package com.github.marcusronnback.twitch2minecraftchat;
-import com.github.marcusronnback.twitch2minecraftchat.commands.CommandIrcBotStart;
-import com.github.marcusronnback.twitch2minecraftchat.CommandIrcBotStop;
-import com.github.marcusronnback.twitch2minecraftchat.CommandIrcBotToggleChat;
+import com.github.marcusronnback.twitch2minecraftchat.CommandT2mcBotStart;
+import com.github.marcusronnback.twitch2minecraftchat.CommandT2mcBotStop;
+import com.github.marcusronnback.twitch2minecraftchat.CommandT2mcBotToggleChat;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class IrcMain extends JavaPlugin {
+public final class Main extends JavaPlugin {
     FileConfiguration _config;
     @Override
     public void onEnable() {
@@ -18,9 +18,9 @@ public final class IrcMain extends JavaPlugin {
             System.out.println("Verifing config set");
             verifyConfigSet();
             BotManager.getInstance().setConfig(_config);
-            this.getCommand("start").setExecutor(new CommandIrcBotStart());
-            this.getCommand("stop").setExecutor(new CommandIrcBotStop());
-            this.getCommand("togglechat").setExecutor(new CommandIrcBotToggleChat());
+            this.getCommand("start").setExecutor(new CommandT2mcBotStart());
+            this.getCommand("stop").setExecutor(new CommandT2mcBotStop());
+            this.getCommand("togglechat").setExecutor(new CommandT2mcBotToggleChat());
         }catch (Exception e){
             e.printStackTrace();
             this.setEnabled(false);

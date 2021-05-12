@@ -4,8 +4,8 @@ Twitch2MinecraftChat is a twitch chat bot plugin for Minecraft Bukkit/Spigot ser
   - Displays twitch chat ingame using the Minecraft Chat.
 
 # Minecraft Commands
-  - /start or /ircbot:start - Starts Twitch Bot
-  - /stop or /ircbot:stop - Stop Twitch Bot
+  - /start or /tmc:start - Starts Twitch Bot
+  - /stop or /tmc:stop - Stop Twitch Bot
   - /togglechat - Enable/Disable Twitch chat in game
 
 # Config.yml
