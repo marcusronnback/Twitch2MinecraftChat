@@ -20,9 +20,6 @@ public class BotManager extends PircBot {
 
     BotManager(){
         _chatTimeout = new HashMap<>();
-        _commandTimeOut = new HashMap<>();
-        _commands = new HashMap<>();
-        _random = new Random();
     }
 
     public static  BotManager getInstance(){
@@ -80,7 +77,6 @@ public class BotManager extends PircBot {
 
     private  void clearTimeouts(){
         _chatTimeout.clear();
-        _commandTimeOut.clear();
     }
 
     public  boolean stop(){

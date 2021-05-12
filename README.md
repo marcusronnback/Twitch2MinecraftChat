@@ -38,9 +38,8 @@ Plugin .jar will be in build/libs if build compeletes successfully.
 
 
 ### Thanks 
-    Thanks to Paul Mutton for its Twitch library 
-    http://www.jibble.org/pircbot.php
-    Thanks to Axel012 for his ircbot that this is heavily based upon.
+  - Thanks to Paul Mutton for its Twitch library http://www.jibble.org/pircbot.php
+  - Thanks to Axel012 for his ircbot that this is heavily based upon.
 
 ### Todos
  - Save user colors etc. Clean up chat.

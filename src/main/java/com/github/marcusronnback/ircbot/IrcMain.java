@@ -1,5 +1,4 @@
 package com.github.marcusronnback.ircbot;
-import com.github.marcusronnback.ircbot.Utils.Utils;
 import com.github.marcusronnback.ircbot.commands.CommandIrcBotStart;
 import com.github.marcusronnback.ircbot.commands.CommandIrcBotStop;
 import com.github.marcusronnback.ircbot.commands.CommandIrcBotToggleChat;

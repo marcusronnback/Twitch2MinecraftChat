@@ -39,18 +39,5 @@ public class ChatUtils {
                 Bukkit.dispatchCommand(Bukkit.getConsoleSender(),cmd);
             }
         });
-
     }
-
-    public  static  void execCommand(String cmd){
-        //dispatch async event
-        Bukkit.getServer().getScheduler()
-                .scheduleSyncDelayedTask(IrcMain.getPlugin(IrcMain.class), new Runnable() {
-                    public void run() {
-                        Bukkit.dispatchCommand(Bukkit.getConsoleSender(),cmd);
-                    }
-                });
-    }
-
-
 }
