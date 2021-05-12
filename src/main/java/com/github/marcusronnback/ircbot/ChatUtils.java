@@ -1,4 +1,4 @@
-package com.github.axel012.ircbot;
+package com.github.marcusronnback.ircbot;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -33,8 +33,8 @@ public class ChatUtils {
             public void run() {
                 int colorIndex = _random.nextInt(_colors.length);
                 String color = _colors[colorIndex];
-                String cmd = String.format("tellraw @a [\"\",{\"text\":\"[CHAT] \",\"color\":\"aqua\"},{\"text\":\"%s:\",\"color\":\"%s\"},{\"text\":\" %s\"}]",
-                        user,color,message);
+                String cmd = String.format("tellraw @a [\"\",{\"text\":\"[CHAT] \",\"color\":\"light_purple\"},{\"text\":\"%s:\",\"color\":\"gray\"},{\"text\":\" %s\"}]",
+                        user,message);
                 System.out.println(cmd);
                 Bukkit.dispatchCommand(Bukkit.getConsoleSender(),cmd);
             }

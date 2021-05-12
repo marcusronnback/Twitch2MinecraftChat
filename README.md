@@ -1,20 +1,12 @@
-# IrcBot
-
-IrcBot is a twitch chat bot plugin for minecraft bukkit/spigot servers.
-
+This is a fork of https://github.com/axel012/ircbot, thank you Axel012.
+# Twitch2MinecraftChat
+Twitch2MinecraftChat is a twitch chat bot plugin for Minecraft Bukkit/Spigot servers. Based on the ircbot by axel012.
   - Displays Twitch chat on minecraft
-  - Can execute minecraft command from twitch chat
 
 # Minecraft Commands
-
   - /start or /ircbot:start - Starts Twitch Bot
   - /stop or /ircbot:stop - Stop Twitch Bot
   - /togglechat - Enable/Disable Twitch chat in game
-
-# Twitch Commands
-- !give <item_name>: gives an item to all players playing in the server.
-- !items: link to item names
-- !summon <entity>: Not implemented yet
 
 # Config.yml
 When running the plugin for the first time, this config file will be generated, in plugins/Ircbot/config.yml
@@ -24,7 +16,7 @@ Follow the instructions below to configure your Config file.
 # Timeout is the time between a user message in milliseconds (to prevent spam)
 chat:
   enable: true
-  timeout: 15000
+  timeout: 250
   
 # channel: channel to connect to
 # username: twitch credentials username
@@ -33,40 +25,7 @@ twitch:
   channel: ''
   username: ''
   oauth_pwd:''
-# Commands enabled by the bot to execute by people of chat
-#   example
-#   !give <item_name> -> performs /give @a <item_name> command in minecraft
-#   (nbt tags and item count are forbidden)
-#   !summon <entity_name> -> performs /summon <entity_name> (not implemented)
-# Params
-#   @enable:  enable / disable command
-#   @timeout: set timeout of a user sending the command in chat
-#   @shared:  timeout is shared between users, when a user sends the command timeouts start couting
-# @vote: (not implemented) allow voting for items between timeouts, 
-ignore shared property if true
-commands:
-  give:
-    enable: true
-    timeout: 5000
-    shared: false
-    vote: false
-  summon:
-    enable: false
-    timeout: 60000
-    shared: true
-    vote: false
 ```
-
-### ScreenShoots
-#### /start
-![](/screenshot/screen1.png?raw=true)
-
-#### Twitch command !give
-![](/screenshot/screen2.png?raw=true)
-
-#### /stop
-![](/screenshot/screen3.png?raw=true)
-You can still receive commands, but chat won't be shown.
 
 ### Build
 - Clone repository
@@ -75,14 +34,14 @@ You can still receive commands, but chat won't be shown.
 - From command line
   gradlew build
 
-Plugin should be in build/libs when done
+Plugin .jar will be in build/libs if build compeletes successfully.
 
 
 ### Thanks 
     Thanks to Paul Mutton for its Twitch library 
-http://www.jibble.org/pircbot.php
+    http://www.jibble.org/pircbot.php
+    Thanks to Axel012 for his ircbot that this is heavily based upon.
 
 ### Todos
- - Add more commands
- - Implement Vote
- - Create better Readme
+ - Save user colors etc. Clean up chat.
+ - Move some customization to config.

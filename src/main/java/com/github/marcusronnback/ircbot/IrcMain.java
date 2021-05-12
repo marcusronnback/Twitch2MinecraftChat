@@ -1,8 +1,8 @@
-package com.github.axel012.ircbot;
-import com.github.axel012.ircbot.Utils.Utils;
-import com.github.axel012.ircbot.commands.CommandIrcBotStart;
-import com.github.axel012.ircbot.commands.CommandIrcBotStop;
-import com.github.axel012.ircbot.commands.CommandIrcBotToggleChat;
+package com.github.marcusronnback.ircbot;
+import com.github.marcusronnback.ircbot.Utils.Utils;
+import com.github.marcusronnback.ircbot.commands.CommandIrcBotStart;
+import com.github.marcusronnback.ircbot.commands.CommandIrcBotStop;
+import com.github.marcusronnback.ircbot.commands.CommandIrcBotToggleChat;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -16,11 +16,10 @@ public final class IrcMain extends JavaPlugin {
         try {
             System.out.println("Loading plugin IRC BOT...");
             System.out.println("Generating items list ...");
-            Utils.generateItemsList();
             System.out.println("Verifing config set");
             verifyConfigSet();
             BotManager.getInstance().setConfig(_config);
-             this.getCommand("start").setExecutor(new CommandIrcBotStart());
+            this.getCommand("start").setExecutor(new CommandIrcBotStart());
             this.getCommand("stop").setExecutor(new CommandIrcBotStop());
             this.getCommand("togglechat").setExecutor(new CommandIrcBotToggleChat());
         }catch (Exception e){
