@@ -9,7 +9,7 @@ Twitch2MinecraftChat is a twitch chat bot plugin for Minecraft Bukkit/Spigot ser
   - /togglechat - Enable/Disable Twitch chat in game
 
 # Config.yml
-When running the plugin for the first time, this config file will be generated, in plugins/Ircbot/config.yml
+When running the plugin for the first time, this config file will be generated, in plugins/Twitch2MinecraftChat/config.yml
 Follow the instructions below to configure your Config file.
 ```yaml
 # Enable/Disable twitch chat in minecraft chat
@@ -31,7 +31,7 @@ twitch:
 - Clone repository
 - From IDE
   Open in intellij or eclipse, run gradle build task
-- From command line
+- From command line run
   gradlew build
 
 Plugin .jar will be in build/libs if build compeletes successfully.
