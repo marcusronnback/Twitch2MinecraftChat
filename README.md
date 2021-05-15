@@ -42,5 +42,4 @@ Plugin .jar will be in build/libs if build compeletes successfully.
   - Thanks to Axel012 for his ircbot that this is heavily based upon.
 
 ### Todos
- - Save user colors etc. Clean up chat.
- - Move some customization to config.
+ - If you have any ideas, please let me know and I will look into implementing them!
